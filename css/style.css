@@ -5,46 +5,74 @@
   --text: #333;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: 'Cairo', sans-serif;
   background: var(--light);
   color: var(--text);
-  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-header.hero {
-  background: linear-gradient(to left, #1e1e2f, #2c2c3f);
+/* ✅ شريط التنقل */
+.navbar {
+  background: var(--dark);
   color: white;
-  padding: 60px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95em;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px;
   text-align: center;
 }
 
-header.hero h1 {
-  font-size: 2.8em;
-  margin-bottom: 15px;
+h1 {
+  font-size: 2em;
+  color: var(--primary);
+  margin-bottom: 10px;
 }
 
-header.hero p {
-  font-size: 1.2em;
-  max-width: 700px;
-  margin: auto;
+p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
 }
 
 .cta {
   background: var(--primary);
   color: white;
-  padding: 15px 30px;
+  padding: 12px 24px;
   border: none;
+  border-radius: 6px;
   font-size: 1em;
   cursor: pointer;
-  margin-top: 30px;
-  border-radius: 8px;
   transition: background 0.3s ease;
 }
 
@@ -53,93 +81,70 @@ header.hero p {
 }
 
 section {
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: auto;
+  margin: 50px 0;
 }
 
-h2 {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 40px;
-  color: var(--dark);
-}
-
-.features, .plans {
+.features {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
 }
 
-.card {
+.features div {
   background: white;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-  flex: 1 1 280px;
-  max-width: 350px;
-  transition: transform 0.3s ease;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-size: 0.95em;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+/* ✅ جدول الباقات */
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-.card h3 {
-  color: var(--primary);
-  font-size: 1.4em;
-  margin-bottom: 10px;
+.pricing-table th,
+.pricing-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
 }
 
-.card p {
-  font-size: 1em;
+.pricing-table th {
+  background-color: var(--primary);
+  color: white;
 }
 
-.card ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 15px;
+.pricing-table tr:nth-child(even) {
+  background-color: #fff;
 }
 
-.card ul li {
-  margin: 10px 0;
-  padding-right: 20px;
-  position: relative;
-}
-
-.card ul li::before {
-  content: "✔";
-  position: absolute;
-  right: 0;
-  color: var(--primary);
+.pricing-table tr:hover {
+  background-color: #f1f1f1;
 }
 
 footer {
-  background: var(--dark);
-  color: white;
-  text-align: center;
-  padding: 30px;
-  font-size: 0.9em;
+  margin-top: 60px;
+  font-size: 0.85em;
+  color: #777;
 }
 
 /* 📱 استجابة للشاشات الصغيرة */
 @media (max-width: 768px) {
-  header.hero h1 {
-    font-size: 2.2em;
-  }
-
-  .cta {
-    width: 100%;
-    font-size: 1.1em;
-  }
-
-  .features, .plans {
+  .nav-links {
     flex-direction: column;
-    align-items: center;
+    gap: 10px;
   }
 
-  .card {
-    max-width: 100%;
+  .features {
+    flex-direction: column;
+  }
+
+  .pricing-table th,
+  .pricing-table td {
+    font-size: 0.9em;
   }
 }
