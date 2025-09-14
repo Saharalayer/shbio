@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>إعدادات المستخدم | Tarwij</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- ✅ شريط التنقل الموحد -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Tarwij</div>
+      <button class="menu-toggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="features.html">المميزات</a></li>
+        <li><a href="pricing.html">الباقات</a></li>
+        <li><a href="contact.html">تواصل</a></li>
+        <li><a href="dashboard.html">لوحة التحكم</a></li>
+        <li><a href="settings.html" class="active">الإعدادات</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ✅ محتوى الصفحة -->
+  <div class="container">
+    <h1>⚙️ إعدادات المستخدم</h1>
+    <form class="settings-form">
+      <label>الاسم الكامل</label>
+      <input type="text" placeholder="مثال: سارة بن يوسف" />
+
+      <label>البريد الإلكتروني</label>
+      <input type="email" placeholder="example@email.com" />
+
+      <label>اللغة المفضلة</label>
+      <select>
+        <option>العربية</option>
+        <option>الفرنسية</option>
+        <option>الإنجليزية</option>
+      </select>
+
+      <label>كلمة المرور الجديدة</label>
+      <input type="password" placeholder="********" />
+
+      <button type="submit">💾 حفظ التغييرات</button>
+    </form>
+  </div>
+
+  <footer>© 2025 Tarwij</footer>
+
+</body>
+</html>
