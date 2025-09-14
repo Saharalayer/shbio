@@ -6,6 +6,7 @@
   <title>إعدادات المستخدم | Tarwij</title>
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/main.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -28,22 +29,32 @@
   <!-- ✅ محتوى الصفحة -->
   <div class="container">
     <h1>⚙️ إعدادات المستخدم</h1>
+    <p>قم بتحديث بياناتك الشخصية، اللغة المفضلة، وكلمة المرور بسهولة.</p>
+
     <form class="settings-form">
-      <label>الاسم الكامل</label>
-      <input type="text" placeholder="مثال: سارة بن يوسف" />
+      <div class="form-card">
+        <label for="name">👤 الاسم الكامل</label>
+        <input type="text" id="name" placeholder="مثال: سارة بن يوسف" />
+      </div>
 
-      <label>البريد الإلكتروني</label>
-      <input type="email" placeholder="example@email.com" />
+      <div class="form-card">
+        <label for="email">📧 البريد الإلكتروني</label>
+        <input type="email" id="email" placeholder="example@email.com" />
+      </div>
 
-      <label>اللغة المفضلة</label>
-      <select>
-        <option>العربية</option>
-        <option>الفرنسية</option>
-        <option>الإنجليزية</option>
-      </select>
+      <div class="form-card">
+        <label for="language">🌐 اللغة المفضلة</label>
+        <select id="language">
+          <option>العربية</option>
+          <option>الفرنسية</option>
+          <option>الإنجليزية</option>
+        </select>
+      </div>
 
-      <label>كلمة المرور الجديدة</label>
-      <input type="password" placeholder="********" />
+      <div class="form-card">
+        <label for="password">🔒 كلمة المرور الجديدة</label>
+        <input type="password" id="password" placeholder="********" />
+      </div>
 
       <button type="submit">💾 حفظ التغييرات</button>
     </form>
