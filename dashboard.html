@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>لوحة التحكم | Tarwij</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
 </head>
 <body>
 
+  <!-- ✅ شريط التنقل الموحد -->
   <nav class="navbar">
     <div class="nav-container">
       <div class="logo">Tarwij</div>
@@ -18,21 +20,46 @@
         <li><a href="pricing.html">الباقات</a></li>
         <li><a href="contact.html">تواصل</a></li>
         <li><a href="dashboard.html" class="active">لوحة التحكم</a></li>
+        <li><a href="settings.html">الإعدادات</a></li>
+        <li><a href="store.html">المتجر</a></li>
+        <li><a href="links.html">الروابط</a></li>
+        <li><a href="analytics.html">التحليلات</a></li>
+        <li><a href="addons.html">الإضافات</a></li>
       </ul>
     </div>
   </nav>
 
+  <!-- ✅ محتوى الصفحة -->
   <div class="container">
-    <h1>👋 مرحبًا بك في لوحة التحكم</h1>
-    <p>هنا يمكنك إدارة صفحتك الذكية، تعديل الروابط، متابعة التحليلات، وتحديث الباقة.</p>
+    <h1>🧭 لوحة التحكم</h1>
+    <p>مرحبًا بك، يمكنك إدارة كل أقسام صفحتك الذكية من هنا.</p>
 
-    <ul class="features-list">
-      <li>عرض الروابط المضافة</li>
-      <li>تحليلات الزوار</li>
-      <li>تعديل التصميم</li>
-      <li>إدارة المنتجات</li>
-      <li>تحديث معلومات الحساب</li>
-    </ul>
+    <div class="dashboard-grid">
+      <a href="links.html" class="dashboard-card">
+        <h3>🔗 إدارة الروابط</h3>
+        <p>أضف، عدّل، واحذف روابطك الشخصية</p>
+      </a>
+
+      <a href="store.html" class="dashboard-card">
+        <h3>🛍️ إدارة المنتجات</h3>
+        <p>اعرض منتجاتك الرقمية أو المادية</p>
+      </a>
+
+      <a href="analytics.html" class="dashboard-card">
+        <h3>📊 التحليلات</h3>
+        <p>تابع أداء صفحتك وعدد الزوار</p>
+      </a>
+
+      <a href="settings.html" class="dashboard-card">
+        <h3>⚙️ إعدادات الحساب</h3>
+        <p>تحديث بياناتك وكلمة المرور</p>
+      </a>
+
+      <a href="addons.html" class="dashboard-card">
+        <h3>🧩 الإضافات</h3>
+        <p>تفعيل الميزات الذكية الإضافية</p>
+      </a>
+    </div>
   </div>
 
   <footer>© 2025 Tarwij</footer>
