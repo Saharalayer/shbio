@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>إدارة الروابط | Tarwij</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- ✅ شريط التنقل الموحد -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Tarwij</div>
+      <button class="menu-toggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="features.html">المميزات</a></li>
+        <li><a href="pricing.html">الباقات</a></li>
+        <li><a href="contact.html">تواصل</a></li>
+        <li><a href="dashboard.html">لوحة التحكم</a></li>
+        <li><a href="settings.html">الإعدادات</a></li>
+        <li><a href="store.html">المتجر</a></li>
+        <li><a href="links.html" class="active">الروابط</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ✅ محتوى الصفحة -->
+  <div class="container">
+    <h1>🔗 إدارة الروابط</h1>
+    <p>أضف روابطك الشخصية أو المهنية لتظهر في صفحتك الذكية.</p>
+
+    <form class="link-form">
+      <input type="text" placeholder="اسم الرابط (مثال: Instagram)" required />
+      <input type="url" placeholder="الرابط الكامل (https://...)" required />
+      <button type="submit">➕ إضافة الرابط</button>
+    </form>
+
+    <div class="links-list">
+      <div class="link-item">
+        <span>Instagram</span>
+        <a href="https://instagram.com/username" target="_blank">فتح</a>
+        <button class="edit">✏️</button>
+        <button class="delete">🗑️</button>
+      </div>
+
+      <div class="link-item">
+        <span>متجر إلكتروني</span>
+        <a href="https://shop.example.com" target="_blank">فتح</a>
+        <button class="edit">✏️</button>
+        <button class="delete">🗑️</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2025 Tarwij</footer>
+
+</body>
+</html>
